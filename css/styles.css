@@ -1,0 +1,439 @@
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+h1 {
+    font-size: 400%;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 250%;
+    color: #001d5d;
+    margin-top: 0;
+}
+
+h3 {
+    color: #001d5d;
+}
+
+h4 {
+    color: #6bc346;
+    text-transform: uppercase;
+}
+
+image {
+    margin: center;
+}
+
+input {
+    font-family: 'Karla', sans-serif;
+    border: none;
+}
+
+input::placeholder {
+    font-family: 'Karla', sans-serif;
+}
+
+p {
+    line-height: 25px;
+}
+
+section {
+    height: 40rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+select {
+    border: none;
+    font-family: 'Karla', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+textarea {
+    width: 35rem;
+    border: none;
+    padding-top: 1rem;
+}
+
+td {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    background-color: #001d5d;
+    height: 28rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.banner-img {
+    height: 100%;
+    width: 100%;
+    background-image: url("./../Images/image1.png");
+    background-position: top center;
+    transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    z-index: 0;
+}
+
+.banner-img-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-img:hover {
+    transform: scale(1.1);
+}
+
+.bio {
+    width: 45%;
+    height: 30rem;
+    float: right;
+    background-color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.bio h2 {
+    margin-right: 14rem;
+}
+
+.bio p {
+    margin-right: 8rem;
+    line-height: 1.5rem;
+}
+
+.bio .btn {
+    margin-left: 0;
+}
+
+.brent {
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.brent-img {
+    max-width: 700%;
+    max-height: auto;
+    width: auto\9;
+}
+
+.brent-img-container {
+    float: left;
+    object-fit: cover;
+    width: 100px;
+}
+
+.btn {
+    padding: 12px 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #d9f0d0;
+    color: #72c64f;
+    border: none;
+    font-weight: 550;
+}
+
+.btn:hover {
+    background-color: #c7e2b2;
+}
+
+.carousel {
+    margin: 0 auto;
+    height: 400px;
+}
+
+.carousel__track {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 70%;
+    position: relative;
+    align-items: center;
+    /* this puts them side by side */
+    display: flex;
+    margin: 0 auto;
+    /* nextButton eventListener */
+    transition: transform 250ms ease-in;
+}
+
+/* track container is necessary because of the overflow.
+Height at 100% because it hides the box shadow if too short. */
+.carousel__track-container {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    display: block;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.carousel__slide {
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    width: 35rem;
+    box-shadow: 0 4px 8px 0 rgba(138, 138, 138, 0.2), 0 6px 20px 0 rgba(122, 122, 122, 0.19);
+    display: flex;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.carousel__slide h3 {
+    font-size: 200%;
+}
+
+.carousel__button-left {
+    border: none;
+    background: transparent;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+}
+
+.carousel__button-right {
+    border: none;
+    background: transparent;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    cursor: pointer;
+}
+
+.carousel__button-container {
+    text-align: center;
+    padding-top: 3.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-margin {
+    /* margin-left: 22rem;
+    margin-right: 22rem; */
+    margin-left: min(28%);
+    margin-right: min(28%);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: white;
+    height: 100%;
+    width: 60%;
+}
+
+.form-container h2 {
+    margin-top: 8rem;
+}
+
+.form-container p {
+    margin-right: 22rem;
+}
+
+.form {
+    display: flex;
+    /* height: 100%; */
+    max-height: 100%;
+    max-width: auto;
+}
+
+.form-img-container {
+    overflow: hidden;
+}
+
+.form-padding {
+    padding-left: 3rem;
+}
+
+.image-container {
+    background-color: #f8f8f8;
+    width: 12rem;
+    display: flex;
+}
+
+.input-styles {
+    background-color: #e8e8e8;
+}
+
+::placeholder {
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.new-releases {
+    margin-bottom: 3rem;
+}
+
+.new-rel-h2 {
+    margin-bottom: 1rem;
+}
+
+.p-container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.p-container h3 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.p-container h4 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.p-container p {
+    width: 20rem;
+    /* this allows the div to fit to the size of the paragraph */
+    display: block;
+    float: right;
+}
+
+.logo {
+    margin-right: max(10%);
+}
+
+.navbar {
+    background-color: white;
+    height: 80px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+    z-index: 99;
+}
+
+.nav-link {
+    color: #0d335d;
+    margin-inline: 1rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.paradox {
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 45%;
+    color: white;
+    padding-top: 12rem;
+    padding-left: 5rem;
+}
+
+.section-padding {
+    padding-top: 5rem;
+}
+
+.short {
+    height: 2.5rem;
+    width: 16rem;
+}
+
+.footer-text {
+    color: white;
+    margin-top: 0;
+}
+
+.a-row {
+    display: flex;
+    height: 15%;
+}
+
+.policy-row {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.policy-column {
+    margin-left: 2rem;
+}
+
+.row {
+    display: flex;
+    height: 80%;
+}
+
+.column {
+    width: 100%;
+}
+
+.footer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+footer .column {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.video-link {
+    color: white;
+    text-align: center;
+}
+
+.video-link:hover {
+    color: #ccf2f4;
+}
+
+#sign-up {
+    background-color: white;
+    height: 50rem;
+    /* This contained the side image from overflowing */
+    display: flex;
+}
+
+#concerts {
+    margin-left: 8%;
+    margin-right: 8%;
+    z-index: 99;
+}
+
+#form-image {
+    max-width: 100%;
+    max-height: auto;
+}
+
+#records {
+    background-color: white;
+}
+
+#signup {
+    margin-left: max(5%);
+}
+
+#music {
+    background-color: #f6f6f6;
+}
